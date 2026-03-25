@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adult Content</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+/* CONTEÚDO DO SITE */
+#content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+/* TELA +18 */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.box {
+    max-width: 400px;
+}
+
+h1 {
+    color: red;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enter {
+    background: green;
+    color: white;
+}
+
+.exit {
+    background: red;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TELA +18 -->
+<div id="overlay">
+    <div class="box">
+        <h1>+18 Warning</h1>
+        <p>This website contains adult content.</p>
+        <p>You must be 18 years or older to continue.</p>
+
+        <button class="enter" onclick="enterSite()">I am 18+</button>
+        <button class="exit" onclick="exitSite()">Leave</button>
+    </div>
+</div>
+
+<!-- CONTEÚDO DO SITE -->
+<div id="content">
+    <h2>Welcome 🔥</h2>
+    <p>Best adult comics and hentai content online.</p>
+
+    <!-- Aqui você coloca seu conteúdo -->
+    <p>Your content here...</p>
+</div>
+
+<script>
+function enterSite() {
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+
+function exitSite() {
+    window.location.href = "https://google.com";
+}
+</script>
+
+</body>
+</html>
