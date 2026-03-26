@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adult Content</title>
+
+<meta name="6a97888e-site-verification" content="b5c8bd7f0f4db0c201eb3fdfda67f94a">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+#content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999;
+}
+
+.box {
+    max-width: 400px;
+}
+
+h1 {
+    color: red;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enter {
+    background: green;
+    color: white;
+}
+
+.exit {
+    background: red;
+    color: white;
+}
+
+img {
+    max-width: 90%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="overlay">
+    <div class="box">
+        <h1>+18 Warning</h1>
+        <p>This website contains adult content.</p>
+        <p>You must be 18 years or older to continue.</p>
+
+        <button class="enter" onclick="enterSite()">I am 18+</button>
+        <button class="exit" onclick="exitSite()">Leave</button>
+    </div>
+</div>
+
+<div id="content">
+    <h2>Welcome 🔥</h2>
+    <p>Best adult comics and hentai content online.</p>
+
+    <img src="01a0eb1f93df2702837d7c14f6791fb2_high.webp">
+    <img src="bc3eebe4d67e42f3f1557c802eabbe99_high.webp">
+    <img src="bc61db9f72cf2cb746d2b16d624c4f1b_high.webp">
+    <img src="caaaa37bdc6bfda0926c7c9a54a16f38_high.webp">
+    <img src="f8fd9a28a2f1327ce6dfe7ee8aae5b47_high.webp">
+</div>
+
+<script>
+function enterSite() {
+
+    // 🔥 ANÚNCIO EXOCLICK (DISPARA AO CLICAR)
+    (function() {
+        var adConfig = {
+            "ads_host": "a.pemsrv.com",
+            "syndication_host": "s.pemsrv.com",
+            "idzone": 5882428,
+            "popup_fallback": false,
+            "popup_force": true,
+            "chrome_enabled": true,
+            "new_tab": false,
+            "frequency_period": 720,
+            "frequency_count": 1,
+            "trigger_method": 3
+        };
+
+        var script = document.createElement('script');
+        script.src = "//a.pemsrv.com/popunder1000.js";
+        script.async = true;
+
+        for (var key in adConfig) {
+            script.setAttribute("data-exo-" + key, adConfig[key]);
+        }
+
+        document.body.appendChild(script);
+    })();
+
+    // entra no site
+    document.getElementById("overlay").style.display = "none";
+    document.getElementById("content").style.display = "block";
+}
+
+function exitSite() {
+    window.location.href = "https://google.com";
+}
+</script>
+
+</body>
+</html>
