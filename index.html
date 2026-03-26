@@ -78,7 +78,7 @@ img {
         <p>This website contains adult content.</p>
         <p>You must be 18 years or older to continue.</p>
 
-        <button class="enter trigger-pop" onclick="enterSite()">I am 18+</button>
+        <button id="btn-confirmar" class="enter trigger-pop" onclick="enterSite()">I am 18+</button>
         <button class="exit" onclick="exitSite()">Leave</button>
     </div>
 </div>
@@ -103,14 +103,14 @@ img {
     "ads_host": "a.pemsrv.com",
     "syndication_host": "s.pemsrv.com",
     "idzone": 5882428,
-    "popup_fallback": false,
-    "popup_force": false,
+    "popup_fallback": true,  // Garante que o anúncio abra mesmo com bloqueadores simples
+    "popup_force": true,     // Força a abertura da janela
     "chrome_enabled": true,
-    "new_tab": false,
+    "new_tab": true,         // ATIVADO: Abre o anúncio em uma nova aba
     "frequency_period": 720,
     "frequency_count": 1,
-    "trigger_method": 2, // Alterado para 2 para focar em classes específicas
-    "trigger_class": "trigger-pop", // Classe que adicionamos no botão
+    "trigger_method": 2,     // Método por classe específica
+    "trigger_class": "trigger-pop", 
     "trigger_delay": 0,
     "capping_enabled": false,
     "tcf_enabled": true,
@@ -122,6 +122,7 @@ window.document.querySelectorAll||(document.querySelectorAll=document.body.query
 </script>
 
 <script>
+// Funções principais do site
 function enterSite() {
     document.getElementById("overlay").style.display = "none";
     document.getElementById("content").style.display = "block";
